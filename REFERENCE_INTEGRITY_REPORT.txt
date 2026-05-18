@@ -1,0 +1,27 @@
+Reference integrity check - quantum_sensor_fusion.tex
+
+Checks performed:
+- Parsed all \cite{...} keys and \bibitem{...} entries.
+- Checked for citations with no bibliography entry.
+- Checked for unused bibliography entries.
+- Checked for duplicate bibliography keys.
+- Checked labels/references for missing \label targets.
+- Checked the only explicit URL in the references.
+- Recompiled the paper twice with pdflatex and verified no undefined citation/reference warnings.
+- Rendered the rebuilt PDF to confirm the output PDF is readable and figures are included.
+
+Findings and changes:
+1. No missing bibliography entries were found for cited references.
+2. No duplicate bibliography keys were found.
+3. Removed three unused bibliography entries:
+   - troiani2018universal
+   - iyer2010snr
+   - hall2012introduction
+4. Updated \begin{thebibliography}{30} to \begin{thebibliography}{20} to match the cleaned reference list.
+5. Added \graphicspath{{../figures/}{figures/}} so the paper compiles correctly from the paper/ folder without figures appearing as missing filename placeholders.
+6. Verified the Intel Lab Data URL resolves correctly:
+   https://db.csail.mit.edu/labdata/labdata.html
+
+Remaining notes:
+- The paper compiles with no undefined citation/reference warnings.
+- There are normal LaTeX underfull/overfull box warnings, but no reference-integrity errors.

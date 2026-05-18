@@ -1,0 +1,15 @@
+# Intel Berkeley Lab Sensor Data
+
+Download the dataset from:
+  https://db.csail.mit.edu/labdata/data.txt.gz
+
+After downloading:
+  gunzip data.txt.gz
+
+Place `data.txt` in this directory (`data/`).
+
+The file is ~34MB compressed, ~150MB uncompressed.
+Schema: date time epoch moteid temperature humidity light voltage
+
+Source: http://db.csail.mit.edu/labdata/labdata.html
+Credit: Peter Bodik, Wei Hong, Carlos Guestrin, Sam Madden, Mark Paskin, Romain Thibaux
