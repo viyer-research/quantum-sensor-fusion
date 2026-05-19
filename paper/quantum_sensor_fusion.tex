@@ -749,6 +749,7 @@ consistent with the $10\log_{10}(M)$~dB theoretical scaling.
 \caption{SNR per spatial cluster: classical vs.\ quantum
 ($N = 1000$ atoms).}
 \label{tab:intel_snr}
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{cccccc}
 \toprule
 Cluster & $M$ & Classical & SQL & HL & Gain \\
@@ -760,7 +761,7 @@ C3 & 9  & 35.8 dB & 52.5 dB & 61.9 dB & +26.1 dB \\
 C4 & 6  & 37.9 dB & 50.6 dB & 58.7 dB & +20.8 dB \\
 C5 & 10 & 38.2 dB & 52.7 dB & 62.6 dB & +24.4 dB \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 
 \textbf{Missing data $\approx$ decoherence.}
@@ -862,6 +863,7 @@ Table~\ref{tab:complexity} summarizes the complexities.
 $M$: sensors, $N$: samples, $t$: trees, $m$: leaves,
 $d$: state dimension.}
 \label{tab:complexity}
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lcc}
 \toprule
 \textbf{Method} & \textbf{Complexity} & \textbf{Source} \\
@@ -875,7 +877,7 @@ Predictive outlier & $O(t \log N)$ & \cite{iyer2015virtual} \\
 Kalman filter & $O(M d^2 + d^3)$ & --- \\
 Vector B-I & $O(d \cdot M \log M)$ & \cite{iyer2013dissertation} \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 
 The $O(t \log N)$ co-occurrence similarity from
